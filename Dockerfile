@@ -30,11 +30,8 @@ RUN apk add --no-cache php \
     php-xmlwriter \
     php-simplexml \
     php-dom \
-    php-pdo_mysql \
-    php-pdo_sqlite \
+    php-pgsql \
     php-tokenizer \
-    php7-pecl-redis
-
 # Installing composer
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php
 RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
